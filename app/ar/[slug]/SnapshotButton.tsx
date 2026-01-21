@@ -1,13 +1,11 @@
 "use client";
 
-interface SnapshotButtonProps {
-  canvasRef: any;
-}
-
-export default function SnapshotButton({ canvasRef }: SnapshotButtonProps) {
+export default function SnapshotButton() {
   const takeSnapshot = () => {
-    if (!canvasRef.current) return;
-    const url = canvasRef.current.domElement.toDataURL("image/png");
+    const canvas = document.querySelector("canvas");
+    if (!canvas) return;
+
+    const url = canvas.toDataURL("image/png");
     const a = document.createElement("a");
     a.href = url;
     a.download = "ar_snapshot.png";
