@@ -36,7 +36,7 @@ export default function Upload2DPage() {
 
   return (
     <main className="min-h-screen bg-gray-950 text-white">
-        <div className="mb-6">
+        <div className="mb-6 pt-10">
         <Link
           href="/"
           className="text-sm bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded transition-colors"
@@ -49,7 +49,7 @@ export default function Upload2DPage() {
       <section
         className="relative flex flex-col items-center justify-center text-center px-6 py-24"
         style={{
-          backgroundImage: "url('/upload-hero.webp')",
+          backgroundImage: "url('/preview.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

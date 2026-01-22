@@ -42,7 +42,7 @@ function Glasses({ url, face, arProfile }: any) {
     const width = Math.abs(leftEye.x - rightEye.x);
 
     ref.current.position.lerp(new Vector3(x * 2, y * 2, z), 0.3);
-    ref.current.scale.setScalar(width * (arProfile.scale * 100));
+    ref.current.scale.setScalar(width * (arProfile.scale * 600));
   });
 
   return <primitive ref={ref} object={model} />;
